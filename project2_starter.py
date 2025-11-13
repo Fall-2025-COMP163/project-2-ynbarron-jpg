@@ -354,4 +354,4 @@ if __name__ == "__main__":
     battle = SimpleBattle(warrior, mage)
     battle.fight()
 
-    print("\n✅ Testing complete!")
+    print("\n Testing complete!")

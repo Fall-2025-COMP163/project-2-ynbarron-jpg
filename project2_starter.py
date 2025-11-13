@@ -43,11 +43,11 @@ class SimpleBattle:
         self.char2.display_stats()
         
         if self.char1.health > self.char2.health:
-            print(f"🏆 {self.char1.name} wins!")
+            print(f" {self.char1.name} wins!")
         elif self.char2.health > self.char1.health:
-            print(f"🏆 {self.char2.name} wins!")
+            print(f" {self.char2.name} wins!")
         else:
-            print("🤝 It's a tie!")
+            print(" It's a tie!")
 
 # ============================================================================
 # YOUR CLASSES TO IMPLEMENT (6 CLASSES TOTAL)
@@ -287,11 +287,11 @@ if __name__ == "__main__":
     rogue = Rogue("Robin Hood")
 
     # TODO: Display their stats
-    # print("\n📊 Character Stats:")
+    # print("\n Character Stats:")
     # warrior.display_stats()
     # mage.display_stats()
     # rogue.display_stats()
-    print("\n📊 Character Stats:")
+    print("\n Character Stats:")
     warrior.display_stats()
     mage.display_stats()
     rogue.display_stats()
@@ -304,7 +304,7 @@ if __name__ == "__main__":
     #     print(f"\n{character.name} attacks the dummy:")
     #     character.attack(dummy_target)
     #     dummy_target.health = 100  # Reset dummy health
-    print("\n⚔️ Testing Polymorphism (same attack method, different behavior):")
+    print("\n Testing Polymorphism (same attack method, different behavior):")
     dummy_target = Character("Target Dummy", 100, 0, 0)
     for character in [warrior, mage, rogue]:
         print(f"\n{character.name} attacks the dummy:")
@@ -312,7 +312,7 @@ if __name__ == "__main__":
         dummy_target.health = 100 
 
     # TODO: Test special abilities
-    # print("\n✨ Testing Special Abilities:")
+    # print("\n Testing Special Abilities:")
     # target1 = Character("Enemy1", 50, 0, 0)
     # target2 = Character("Enemy2", 50, 0, 0)
     # target3 = Character("Enemy3", 50, 0, 0)
@@ -320,7 +320,7 @@ if __name__ == "__main__":
     # warrior.power_strike(target1)
     # mage.fireball(target2)
     # rogue.sneak_attack(target3)
-    print("\n✨ Testing Special Abilities:")
+    print("\n Testing Special Abilities:")
     target1 = Character("Enemy1", 50, 0, 0)
     target2 = Character("Enemy2", 50, 0, 0)
     target3 = Character("Enemy3", 50, 0, 0)
@@ -338,7 +338,7 @@ if __name__ == "__main__":
     # sword.display_info()
     # staff.display_info()
     # dagger.display_info()
-    print("\n🗡️ Testing Weapon Composition:")
+    print("\n Testing Weapon Composition:")
     sword = Weapon("Iron Sword", 10)
     staff = Weapon("Magic Staff", 15)
     dagger = Weapon("Steel Dagger", 8)
@@ -350,7 +350,7 @@ if __name__ == "__main__":
     # print("\n⚔️ Testing Battle System:")
     # battle = SimpleBattle(warrior, mage)
     # battle.fight()
-    print("\n⚔️ Testing Battle System:")
+    print("\n Testing Battle System:")
     battle = SimpleBattle(warrior, mage)
     battle.fight()
 

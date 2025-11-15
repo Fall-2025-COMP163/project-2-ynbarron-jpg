@@ -1,1 +1,1 @@
-
+This project showcases different character classes using inheritance, polymorphism, and unique combat abilities, all tested through a simple battle system. One challenge I faced was getting the overridden attack methods to behave differently without breaking the base class logic.
